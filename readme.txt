@@ -48,7 +48,13 @@ customizable_menu_id - Foreignkey(Menu - id)
 
 Table AddOns
 id - IntegerField
+name - CharField
 description - TextField
 menu_id - Foreignkey(Menu - id)
+
+Table AddOnItems
+id - IntegerField
+description - TextField
+add_on_id - Foreignkey(AddOns id)
 name - CharField
 price  - FloatField
