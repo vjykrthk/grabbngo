@@ -8,6 +8,9 @@ address - TextField
 short_address - TextField
 image - TextField
 pickup_point - CharField
+lat - DecimalField
+long - DecimalField
+is_open - BooleanField
 
 
 Table - MainCategory
@@ -29,6 +32,7 @@ name - CharField
 isVegetarian - BooleanField
 image - TextField
 sub_category_id - Foreignkey(SubCategory - id)
+price - FloatField
 
 Advantages
 Get MainCategory items from Store table requires 1 jump
@@ -47,6 +51,9 @@ address - TextField
 short_address - TextField
 image - TextField
 pickup_point - CharField
+lat - DecimalField
+long - DecimalField
+is_open - BooleanField
 
 
 Table - MainCategory
@@ -67,6 +74,7 @@ name - CharField
 isVegetarian - BooleanField
 image - TextField
 sub_category_id - Foreignkey(SubCategory - id)
+price - FloatField
 
 Advantages
 Get MainCategory items from Store table requires 2 jumps. Get sub categories from sub categories get main categories
